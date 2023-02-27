@@ -1,0 +1,30 @@
+{
+  "name": "rust-wasm-demo",
+  "version": "1.0.0",
+  "description": "learn rust",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist pkg && webpack",
+    "start": "rimraf dist pkg && webpack-dev-server",
+    "test": "cargo test && wasm-pack test --headless"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenfengyanyu/rust-wasm-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenfengyanyu/rust-wasm-demo/issues"
+  },
+  "homepage": "https://github.com/chenfengyanyu/rust-wasm-demo#readme"
+}
